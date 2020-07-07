@@ -10,6 +10,13 @@ import T05_ValidaCelular from './src/pages/T05_ValidaCelular';
 import T06_BoasVindas from './src/pages/T06_BoasVindas';
 import T07_RecuperaSenha from './src/pages/T07_RecuperaSenha';
 import T08_EnviaLinkRecuperacao from './src/pages/T08_EnviaLinkRecuperacao';
+import T12_ValorViagem from './src/pages/T12_ValorViagem'
+import T13_Troco from './src/pages/T13_Troco'
+import T14_ValorTroco from './src/pages/T14_ValorTroco'
+import T15_ConfirmaçaoLocal from './src/pages/T15_ConfirmaçaoLocal'
+import T20_FinalizaçaoViagem from './src/pages/T20_FinalizaçaoViagem'
+import T21_Comentário from './src/pages/T21_Comentário'
+import T26_PerfilMotorista from './src/pages/T26_PerfilMotorista'
 
 const Stack = createStackNavigator();
 
@@ -35,6 +42,13 @@ function App() {
             headerBackTitle: null,
             headerTruncatedBackTitle: '',
            }} />
+        <Stack.Screen name="T12_ValorViagem" component={T12_ValorViagem}/>
+        <Stack.Screen name="T13_Troco" component={T13_Troco}/>
+        <Stack.Screen name="T14_ValorTroco" component={T14_ValorTroco}/>
+        <Stack.Screen name="T15_ConfirmaçaoLocal" component={T15_ConfirmaçaoLocal}/>
+        <Stack.Screen name="T20_FinalizaçaoViagem" component={T20_FinalizaçaoViagem}/>
+        <Stack.Screen name="T21_Comentário" component={T21_Comentário}/>
+        <Stack.Screen name="T26_PerfilMotorista" component={T26_PerfilMotorista}/>
         <Stack.Screen name="T08_EnviaLinkRecuperacao" component={T08_EnviaLinkRecuperacao} />
       </Stack.Navigator>
     </NavigationContainer>
