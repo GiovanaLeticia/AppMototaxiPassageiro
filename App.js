@@ -17,6 +17,11 @@ import T15_ConfirmaçaoLocal from './src/pages/T15_ConfirmaçaoLocal'
 import T20_FinalizaçaoViagem from './src/pages/T20_FinalizaçaoViagem'
 import T21_Comentário from './src/pages/T21_Comentário'
 import T26_PerfilMotorista from './src/pages/T26_PerfilMotorista'
+import T34_AlterarCelular from './src/pages/T34_AlterarCelular'
+import T35_AlterarEmail from './src/pages/T35_AlterarEmail'
+import T38_ConfimacaoSMS from './src/pages/T38_ConfimacaoSMS'
+import T39_ConfirmaNovoEmail from './src/pages/T39_ConfirmaNovoEmail'
+
 
 const Stack = createStackNavigator();
 
@@ -24,24 +29,15 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
+      
         <Stack.Screen name="T01_Abertura" component={T01_Abertura} />
         <Stack.Screen name="T02_Login" component={T02_Login} />
         <Stack.Screen name="T03_CriaConta" component={T03_CriaConta} />
         <Stack.Screen name="T04_Celular" component={T04_Celular} />
         <Stack.Screen name="T05_ValidaCelular" component={T05_ValidaCelular} />
         <Stack.Screen name="T06_BoasVindas" component={T06_BoasVindas} />
-        <Stack.Screen name="T07_RecuperaSenha" component={T07_RecuperaSenha}
-          options={{
-            title: '',
-            headerShown: true,
-            headerStyle: {
-              backgroundColor: '#000000',
-              shadowColor: 'transparent'
-            },
-            headerTintColor: '#FDE93A',
-            headerBackTitle: null,
-            headerTruncatedBackTitle: '',
-           }} />
+        <Stack.Screen name="T07_RecuperaSenha" component={T07_RecuperaSenha}/> 
+        <Stack.Screen name="T08_EnviaLinkRecuperacao" component={T08_EnviaLinkRecuperacao} />
         <Stack.Screen name="T12_ValorViagem" component={T12_ValorViagem}/>
         <Stack.Screen name="T13_Troco" component={T13_Troco}/>
         <Stack.Screen name="T14_ValorTroco" component={T14_ValorTroco}/>
@@ -49,10 +45,15 @@ function App() {
         <Stack.Screen name="T20_FinalizaçaoViagem" component={T20_FinalizaçaoViagem}/>
         <Stack.Screen name="T21_Comentário" component={T21_Comentário}/>
         <Stack.Screen name="T26_PerfilMotorista" component={T26_PerfilMotorista}/>
-        <Stack.Screen name="T08_EnviaLinkRecuperacao" component={T08_EnviaLinkRecuperacao} />
-      </Stack.Navigator>
+        <Stack.Screen name="T34_AlterarCelular" component={T34_AlterarCelular}/>
+        <Stack.Screen name="T35_AlterarEmail" component={T35_AlterarEmail}/>
+        <Stack.Screen name="T38_ConfimacaoSMS" component={T38_confimacaoSMS}/>
+        <Stack.Screen name="T39_ConfirmaNovoEmail" component={T39_ConfirmaNovoEmail}/>
+             </Stack.Navigator>
     </NavigationContainer>
   );
 }
 
 export default App;
+
+

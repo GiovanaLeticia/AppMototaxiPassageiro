@@ -1,27 +1,19 @@
 import React from 'react';
-import { View, Text, TextInput, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image, TextInput } from 'react-native';
 
-export default class T07_RecuperaSenha extends React.Component {
-  render() {
-    return (
-        <View style={styles.conteiner}>
+export default class T34_AlterarCelular extends React.Component {
+	render() {
+		return (
 
-			<TouchableOpacity onPress={() => {this.props.navigation.goBack()}}>
-					<Image
-					source={require('../img/seta.png')}
-					style={styles.imageIcon}
-						/>		 
-			</TouchableOpacity>
-
-
-        <Text style={styles.text}>Recuperação de senha</Text>
-            <TextInput style={styles.inputemail}
-                    placeholder= "E-mail"
-            />
-            <View>
-            <Text style={styles.text2}>Ou</Text>
-            </View>
-            <View style={styles.inputflex}>
+			<View style={styles.conteiner}>
+				<TouchableOpacity onPress={() => {this.props.navigation.goBack()}}>
+									<Image
+									 source={require('../img/seta.png')}
+									 style={styles.imageIcon}
+									 />	 
+				</TouchableOpacity>
+				<Text style={styles.text}>Alterar telefone</Text>
+				<View style={styles.inputflex}>
     
                   <TextInput style={styles.Input} keyboardType = 'numeric'
                     maxLength = {2}
@@ -32,49 +24,31 @@ export default class T07_RecuperaSenha extends React.Component {
                     placeholder= "98765-4321"
                 />
             </View>
-          <TouchableOpacity style={styles.button} onPress={() => {this.props.navigation.navigate('T08_EnviaLinkRecuperacao')}}>
+				<TouchableOpacity style={styles.button} onPress={() => {this.props.navigation.navigate('T38_confimacaoSMS')}}>
                <View style={styles.viewbutton}>
                    <Text style={styles.textbutton}>
-                           Redefinir senha
+                           Continuar
                    </Text>
                </View>
            </TouchableOpacity>
-       </View>
-    );
-  }
+			</View>
+			)
+	}
 }
-
 const styles = StyleSheet.create({
 	conteiner:{
-		paddingTop: 20,
-		backgroundColor:'#000000',
-		flex: 1,
+		backgroundColor:'#000',
+		flex:1,
 	},
 	imageIcon:{
 		height: 40,
 		width: 40,
 		marginLeft:30,
-		position:'absolute',
-		marginTop:50
+		marginTop:50 
 	},
-	text:{
-		marginTop:120,
-		fontSize:40,
-		color: 'white',
-		alignSelf: 'center',
-
-	},
-	text2:{
-		marginTop:35,
-		fontSize:40,
-		color: 'white',
-		alignSelf: 'center',
-
-	},
-	
 	Input:{
 		color:'black',
-		marginTop:35,
+		marginTop:25,
 		marginLeft:15,
 		backgroundColor: 'white',
 		padding:10,
@@ -85,7 +59,7 @@ const styles = StyleSheet.create({
 	},
 	Input2:{
 		color:'black',
-		marginTop:35,
+		marginTop:25,
 		marginLeft:15,
 		backgroundColor: 'white',
 		padding:10,
@@ -94,15 +68,25 @@ const styles = StyleSheet.create({
 		fontSize:30,
 		borderRadius: 10,
 	},
-	inputemail:{
+	inputflex:{
+		flexDirection: 'row',
+	},
+	text:{
+		fontSize:30,
+		color:'#FDE93A',
+		marginLeft:20,
+		marginTop:50,
+		fontWeight: 'bold',
+	},
+	input:{
 		color:'black',
-		marginTop:35,
-		marginLeft:15,
+		marginTop:25,
+		marginLeft:20,
 		backgroundColor: 'white',
 		padding:10,
-		width: 375, 
+		width: 350, 
 		height: 50,
-		fontSize:30,
+		fontSize:25,
 		borderRadius: 10,
 	},
 	viewbutton:{
@@ -124,7 +108,4 @@ const styles = StyleSheet.create({
 		margin:10, 
 		alignSelf: 'center',
 	},
-	inputflex:{
-		flexDirection: 'row',
-	},
-});
+})

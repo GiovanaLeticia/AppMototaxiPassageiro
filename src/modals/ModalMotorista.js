@@ -1,4 +1,17 @@
+constructor(props) {
+    	super(props);
+
+  		this.state = {
+        isVisible: false,
+
+    	};
+ 	 }
+
 			
+
+
+
+
 			<Modal
 	          animationType={'fade'}
 	          transparent={true}
@@ -11,7 +24,7 @@
 
 		          	<View style={styles.modalstyle}>
 
-							<Text style={styles.modaltext}>Deseja ligar para a emergência?</Text>
+							<Text style={styles.modaltext}>Deseja ligar para o motorista?</Text>
 
 						<View style={styles.row}>
 
@@ -49,7 +62,7 @@ const styles = StyleSheet.create({
 
 	modalstyle:{
 		backgroundColor:'#1C1C1C',
-		height:210,
+		height:200,
 		width: 290,
 		alignSelf: 'center',
 		marginTop:300,
@@ -72,7 +85,7 @@ const styles = StyleSheet.create({
 
 	modalbutton:{
 		paddingTop:20,
-		paddingRight:16,
+		paddingRight:13,
 		width: 150,
 		marginTop:30,
 

@@ -4,7 +4,7 @@ import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-nativ
 export default class T04_Celular extends React.Component {
   render() {
     return (
-        <View style={styles.viewofall}>
+        <View style={styles.conteiner}>
         <Text style={styles.text}>Qual o número do seu telefone celular?</Text>
             <View style={styles.inputflex}>
     
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
 		fontSize:40,
 		color: 'white',
 		alignSelf: 'center',
+		textAlign: 'center',
 
 	},
 	Input:{
@@ -60,28 +61,28 @@ const styles = StyleSheet.create({
 		borderRadius: 10,
 	},
 	viewbutton:{
-		height: 50,
+		height: 60,
 		borderBottomWidth: 1,
 		alignItems: 'center',
 		backgroundColor:'#FDE93A',
 		borderRadius: 10, 
+		width: 200,
 	},
 	textbutton: {
 		fontSize:25,
-		paddingTop: 12,
+		paddingTop: 15,
 		color: 'black'
 
 	},
 	button:{
 		padding:20,
-		margin:10,
-		width: 200, 
+		margin:10, 
 		alignSelf: 'center',
 	},
 	inputflex:{
 		flexDirection: 'row',
 	},
-	viewofall:{
+	conteiner:{
 		paddingTop: 50,
 		backgroundColor:'#000000',
 		flex: 1

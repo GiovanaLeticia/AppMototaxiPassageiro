@@ -39,22 +39,22 @@ const styles = StyleSheet.create({
 		alignSelf: 'center',
 	},
 	viewbutton:{
-		height: 50,
+		height: 60,
 		borderBottomWidth: 1,
 		alignItems: 'center',
 		backgroundColor:'#FDE93A',
-		borderRadius: 10,
+		borderRadius: 10, 
+		width: 200,
 	},
 	textbutton: {
 		fontSize:25,
-		paddingTop: 12,
+		paddingTop: 15,
 		color: 'black'
 
 	},
 	button:{
 		padding:20,
-		margin:10,
-		width: 200, 
+		margin:10, 
 		alignSelf: 'center',
 	},
 	viewofall:{
