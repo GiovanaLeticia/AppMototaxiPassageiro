@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
 
 	modalstyle:{
 		backgroundColor:'#1C1C1C',
-		height:210,
+		height:200,
 		width: 290,
 		alignSelf: 'center',
 		marginTop:300,
@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
 
 	modalbutton:{
 		paddingTop:20,
-		paddingRight:16,
+		paddingRight:13,
 		width: 150,
 		marginTop:30,
 

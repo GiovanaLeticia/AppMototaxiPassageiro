@@ -19,10 +19,7 @@ return (
 	          animationType={'fade'}
 	          transparent={true}
 	          visible={this.state.isVisible}
-	          onRequestClose={() => {
-	            this.setState({ isVisible: false });
-	          }}
-	        >
+	          >
 		        <View style={styles.modalbackground}>
 
 		          	<View style={styles.modalstyle}>

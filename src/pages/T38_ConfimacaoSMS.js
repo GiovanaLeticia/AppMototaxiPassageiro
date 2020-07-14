@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TextInput,TouchableOpacity } from 'react-native';
 
-export default class T05_ValidaCelular extends React.Component {
+export default class T38_ConfimacaoSMS extends React.Component {
   render() {
     return (
         <View style={styles.conteiner}>
